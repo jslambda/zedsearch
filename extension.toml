@@ -24,5 +24,5 @@ requires_argument = false
 
 [[capabilities]]
 kind = "process:exec"
-command = "srcsearch"
+command = "*"
 args = ["**"]
