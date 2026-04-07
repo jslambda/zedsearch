@@ -1,4 +1,4 @@
-# zed-srcsearch (Phase 1)
+# zed-srcsearch
 
 A thin Zed slash-command extension that runs the local [`srcsearch`](https://github.com/jslambda/srcsearch) CLI for repository indexing and search.
 
