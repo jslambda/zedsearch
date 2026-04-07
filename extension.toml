@@ -1,0 +1,28 @@
+id = "srcsearch"
+name = "srcsearch"
+description = "Run local srcsearch indexing and search from Zed slash commands."
+version = "0.1.0"
+schema_version = 1
+authors = ["zed-srcsearch contributors"]
+repository = "https://github.com/jslambda/srcsearch"
+
+[slash_commands.srcindex]
+description = "Build a srcsearch index for the current workspace"
+requires_argument = false
+
+[slash_commands.srcsearch]
+description = "Search indexed code and docs"
+requires_argument = true
+
+[slash_commands.srcdocs]
+description = "Search only indexed documentation"
+requires_argument = true
+
+[slash_commands.srcupdate]
+description = "Refresh the srcsearch index (Phase 1 full rebuild)"
+requires_argument = false
+
+[[capabilities]]
+kind = "process:exec"
+command = "*"
+args = ["**"]
