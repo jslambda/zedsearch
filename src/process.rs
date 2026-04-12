@@ -4,7 +4,6 @@ use zed_extension_api::{process::Command, Worktree};
 #[derive(Debug, Clone)]
 pub struct ProcessOutput {
     pub stdout: String,
-    pub stderr: String,
 }
 
 pub fn run_srcsearch(
@@ -42,5 +41,5 @@ pub fn run_srcsearch(
         return Err(ExtensionError::EmptyStdout);
     }
 
-    Ok(ProcessOutput { stdout, stderr })
+    Ok(ProcessOutput { stdout })
 }
